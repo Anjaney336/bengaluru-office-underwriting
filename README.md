@@ -1,3 +1,5 @@
+> **Consolidated research, 24 October 2026:** The expanded version of this work is maintained in [bengaluru-real-estate-investment-lab](https://github.com/Anjaney336/bengaluru-real-estate-investment-lab), with a [research dashboard](https://anjaney336.github.io/portfolio/research/bengaluru-real-estate-investment-lab/). This repository preserves the earlier implementation and results.
+
 # Bengaluru Office Investment & Asset Management
 
 A reproducible investment-analysis portfolio case by Anjaney Malhotra. The question is whether a hypothetical 100,000 sq ft office asset supports its purchase price after operating costs, lease rollover, capital costs and debt service.
