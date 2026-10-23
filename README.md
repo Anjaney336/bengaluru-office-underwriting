@@ -88,3 +88,12 @@ Run `python reproduce.py` for the 21 unit tests, acquisition scenarios, operatin
 
 ### Sources and ownership
 The original acquisition assumptions and operating fixtures are code-generated, not empirical transaction comparables. Source: [assumptions.json](https://github.com/Anjaney336/bengaluru-office-underwriting/blob/main/assumptions.json) and [operating fixture generator](https://github.com/Anjaney336/bengaluru-office-underwriting/blob/main/asset_management/run.py), accessed 24 October 2026. Embassy source links, dates and page references are retained in the workbook/memo. AI-assisted code; independently understand, reproduce and challenge all model inputs before interviews.
+
+## Financing stress extension
+
+25 leverage/rate combinations with monotonicity assertions. Modelled DSCR is conditional on illustrative inputs, not a forecast hit rate.
+
+![Financing stress extension](results/financing_stress.svg)
+
+Run `python financing_stress.py` after installing `matplotlib==3.10.7`. Sources are the existing documented fixture/ledger, accessed 24 October 2026. All sensitivity inputs are assumptions.
+
