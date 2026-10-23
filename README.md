@@ -1,4 +1,4 @@
-# Bengaluru Office Acquisition Underwriting
+# Bengaluru Office Investment & Asset Management
 
 A reproducible investment-analysis portfolio case by Anjaney Malhotra. The question is whether a hypothetical 100,000 sq ft office asset supports its purchase price after operating costs, lease rollover, capital costs and debt service.
 
@@ -15,7 +15,7 @@ The model explicitly captures year-three lease rollover, lost rent, tenant impro
 Python 3.10+; no external packages required.
 
 ```bash
-cd real-estate-underwriting
+cd bengaluru-office-underwriting
 python -m unittest -v
 python run_analysis.py
 ```
@@ -71,3 +71,20 @@ This case demonstrates cash-flow forecasting, valuation sensitivity, debt analys
 ## Authorship and learning
 
 Developed for Anjaney Malhotra's portfolio with AI coding assistance. The candidate should reproduce the results, explain the formulas and challenge the assumptions before presenting the work in interviews. This project does not claim employer sponsorship, live-deal experience or independently achieved investment returns.
+
+## Integrated investment-to-operations case
+This is one project with three connected analytical modules, not three separate resume entries:
+1. **Acquisition screen:** illustrative five-year office underwriting with 3 scenarios, 25 sensitivity cells, 2,000 stress simulations and a price/DSCR screen.
+2. **Public-filings case:** `embassy_case/` holds the Embassy/Manyata memo, 10-year Excel acquisition case, source reconciliation and independent arithmetic check. Modelled IRR is not a realised investment return; desktop Excel native-table verification and professional review remain pending.
+3. **Asset management:** `asset_management/` contains a SQLite-backed lease/operating review with rent-weighted WALE, concentration, monthly DSCR and an exact four-factor NOI variance bridge. The synthetic 4-asset, 20-lease, 24-asset-month fixture is separate from Embassy disclosures; it must never be represented as Embassy's actual rent roll.
+
+Run `python reproduce.py` for the 21 unit tests, acquisition scenarios, operating dashboard and independent Embassy arithmetic check. The Excel workbook is not recalculated by this command.
+
+### Manager-facing deliverables
+- Investment decision: what entry price passes the assumed return and coverage hurdles?
+- Downside review: how do rollover downtime, cap-rate expansion and borrowing costs change the case?
+- Operating review: which variance is occupancy, pricing, collections or expenses; what rent expires within one year?
+- Diligence priorities: actual lease expiries, tenant concentration, capital expenditure, recoveries, debt covenants and verified market evidence.
+
+### Sources and ownership
+The original acquisition assumptions and operating fixtures are code-generated, not empirical transaction comparables. Source: [assumptions.json](https://github.com/Anjaney336/bengaluru-office-underwriting/blob/main/assumptions.json) and [operating fixture generator](https://github.com/Anjaney336/bengaluru-office-underwriting/blob/main/asset_management/run.py), accessed 24 October 2026. Embassy source links, dates and page references are retained in the workbook/memo. AI-assisted code; independently understand, reproduce and challenge all model inputs before interviews.
